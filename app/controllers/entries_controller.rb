@@ -50,7 +50,23 @@ class EntriesController < ApplicationController
       end
     end
   end
-
+  
+  def lookup
+    code = params[:code]
+    name = params[:name]
+    if name && code
+      @test = Code.find_by(code: code)
+      if @test
+        newEntr = Entry.new
+        newEntr.name = name
+        newEntr.code = code
+        newEntr.save
+      end
+      @query = code
+      @name = name
+    end
+  end
+  
   # DELETE /entries/1
   # DELETE /entries/1.json
   def destroy

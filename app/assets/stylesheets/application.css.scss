@@ -1,0 +1,53 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+@import "flat-ui";
+
+body {
+	background-color: #27ae60;
+
+}
+#spacer {
+	background-color: #ecf0f1;
+	width: 400px;
+	padding: 80px 20px;
+	height: 300px;
+	border-radius: 20px;
+	margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+}
+#formCS {
+	text-align: center;
+	margin-top: 40px;
+	#submit {
+		padding: 20px;
+		border-radius: 5px;
+	}
+}
+
+#logo {
+	text-align: center;
+	margin: 0 auto;
+
+}
+.resp {
+	color:white;
+	text-align: center;
+}
+.hidden {
+	display: none;
+}
+

@@ -1,0 +1,27 @@
+
+<% if not defined? @test %>
+<div id="spacer">
+	<div id="logo" class="hidden">
+		<img src="images/icon.png" width="100px" height="auto">
+	</div>
+	<form method="GET" id="formCS">
+
+		<input id="name" type="text" placeholder="name" name="name"><BR>
+		<BR>
+		<input id="code" type="text" placeholder="code" name="code"><BR>
+		<BR>
+		<input id="submit" class="btn btn-block btn-lg btn-success" type="submit">
+	</form>
+</div>
+<% else %>
+	<% if @test.blank? %>
+		<h1 class="resp">Sorry <%= @name %>! The code '<%= @query %>' was not found.</h1>
+	<% else %>
+	 	<h1 class="resp">Your code has been accepted! Good luck!</h1>
+	<% end %>
+<% end %>
+<script type="text/javascript">
+	$(document).ready(function () {
+	    $('div#logo').fadeIn(2800).removeClass('hidden');
+	});
+</script>
