@@ -39,4 +39,4 @@ gem 'spring',        group: :development
 # gem 'debugger', group: [:development, :test]
 
 gem 'rails_12factor', group: :production
-gem 'flat-ui-sass', github: 'wingrunr21/flat-ui-sass'
+gem "flat-ui-rails"

@@ -12,8 +12,8 @@
  *
  *= require_tree .
  *= require_self
+ *= require flat-ui
  */
-@import "flat-ui";
 
 body {
 	background-color: #27ae60;
@@ -26,17 +26,18 @@ body {
 	height: 300px;
 	border-radius: 20px;
 	margin: auto;
-  position: absolute;
-  top: 0; left: 0; bottom: 0; right: 0;
+  	position: absolute;
+  	top: 0; left: 0; bottom: 0; right: 0;
 }
 #formCS {
 	text-align: center;
 	margin-top: 40px;
-	#submit {
+	
+}
+#submit {
 		padding: 20px;
 		border-radius: 5px;
 	}
-}
 
 #logo {
 	text-align: center;
